@@ -252,7 +252,7 @@
       background-color: $c-light;
       transition: transform 0.3s ease-out, background-color 0.3s ease-out;
       transform: scaleX(0);
-      transform-origin: left center;
+      transform-origin: right center;
       left: 0;
 
       @media (max-width: $tablet) and (orientation: portrait) {
@@ -273,7 +273,7 @@
     &.active {
       &::after {
         transform: scaleX(1);
-        transform-origin: right center;
+        transform-origin: left center;
       }
     }
 
