@@ -30,11 +30,13 @@
 }
 
 .form__field {
+  transition: 0.3s ease-out;
+  width: 0;
   flex: none;
+  margin-left: auto;
   margin-right: 3rem;
   padding: 0 5.6rem;
   height: 6rem;
-  width: calc(100% - 21rem);
   text-transform: uppercase;
   font: inherit;
   font-size: 2.4rem;
@@ -79,7 +81,7 @@
 }
 
 .form__button {
-  flex-grow: 1;
+  width: 25rem;
 
   @media (orientation: portrait) {
     position: relative;
@@ -127,7 +129,6 @@
 
 .form--result {
   .form__field {
-    width: calc(100% - 31rem);
 
     @media (min-width: $stop-scaling) {
       width: calc(100% - 310px);
@@ -145,4 +146,8 @@
       width: calc(100% - 5rem);
     }
   }
+}
+
+.active .form__field {
+  width: calc(100% - 28rem);
 }

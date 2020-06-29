@@ -45,7 +45,10 @@ export default class FullPageScroll {
       screen.classList.remove(`active`);
     });
     this.screenElements[this.activeScreen].classList.remove(`screen--hidden`);
-    this.screenElements[this.activeScreen].classList.add(`active`);
+    // A temporary fix because of impossibility to create transition for the intro message block
+    // The source of solution:
+    // https://htmlacademy-animation.slack.com/archives/C0123PD9E1L/p1589445048215000?thread_ts=1589113410.201000&cid=C0123PD9E1L
+    setTimeout(() => this.screenElements[this.activeScreen].classList.add(`active`));
   }
 
   changeActiveMenuItem() {
