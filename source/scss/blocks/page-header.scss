@@ -26,6 +26,17 @@
   justify-content: space-between;
 }
 
+.loaded {
+  .page-header__logo {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .page-header__nav {
+    opacity: 1;
+  }
+}
+
 .page-header__logo {
   @include hover;
   position: relative;
@@ -35,6 +46,9 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
+  transition: 0.3s $animation-initial-appearing;
+  transform: translateX(-20px);
+  opacity: 0;
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -130,6 +144,8 @@
 .page-header__nav {
   display: flex;
   align-items: center;
+  opacity: 0;
+  transition: 0.3s $animation-initial-appearing;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     position: fixed;
@@ -177,6 +193,7 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
+  transition: 0.3s $animation-initial-appearing;
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;

@@ -32,6 +32,7 @@
   font-size: 12rem;
   line-height: 0.906;
   letter-spacing: -0.04em;
+  opacity: 0;
 
   @media (min-width: $stop-scaling) {
     max-width: 990px;
@@ -72,6 +73,7 @@
   flex: none;
   width: 50rem;
   max-width: 50%;
+  opacity: 0;
 
   @media (min-width: $stop-scaling) {
     width: 500px;
@@ -139,7 +141,7 @@
   }
 }
 
-.active {
+.loaded .active {
   .intro__message {
     opacity: 1;
     transform: translateY(0);
