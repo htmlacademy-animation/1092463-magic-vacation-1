@@ -78,6 +78,13 @@
   }
 }
 
+.transition-active {
+  .screen--with-leave-animation.active ~ .overlay {
+    z-index: 2;
+    height: 100%;
+  }
+}
+
 .screen__footer-wrapper {
   @include container;
 
