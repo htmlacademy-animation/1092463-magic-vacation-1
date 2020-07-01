@@ -8,7 +8,7 @@ export default () => {
 
   const toMenuItemName = (ref) => ref.replace(`#`, ``);
 
-  const animationWithLinks = document.querySelectorAll(`.with-animation`);
+  const animationWithLinks = document.querySelectorAll(`.with-animation-before`);
   const body = document.querySelector(`body`);
 
   let activeTimeout;
