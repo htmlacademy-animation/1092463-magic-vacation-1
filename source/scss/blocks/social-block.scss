@@ -9,6 +9,16 @@
   }
 }
 
+
+.loaded {
+  .social-block__toggler {
+    &::before {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 .social-block__toggler {
   @include btn-reset;
   position: relative;
@@ -17,6 +27,7 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
+  transition: 0.3s ease-in-out;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
@@ -29,8 +40,8 @@
   &::before {
     @include center;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
     border-radius: 50%;
     background-color: $c-light;
     border: 2px solid $c-light;
