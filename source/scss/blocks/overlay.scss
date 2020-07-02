@@ -1,0 +1,10 @@
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  z-index: -1;
+  background-color: $c-dark;
+  transition: height 300ms ease-out;
+}
