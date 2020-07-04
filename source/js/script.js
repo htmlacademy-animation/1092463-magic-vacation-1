@@ -7,11 +7,13 @@ import chat from './modules/chat.js';
 import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
+import rulesLifeCycleAnimation from './modules/rules-life-cycle-animation.js';
 import lifeCycleState from './modules/life-cycle-state';
 import navigationAnimation from './modules/navigation-animation.js';
 import FullPageScroll from './modules/full-page-scroll';
 
 // init modules
+rulesLifeCycleAnimation();
 lifeCycleState();
 mobileHeight();
 navigationAnimation();
