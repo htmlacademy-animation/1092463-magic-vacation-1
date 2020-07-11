@@ -21,11 +21,18 @@
   @media (max-width: $mobile) and (orientation: landscape) {
     padding: 16vh 0 5vh;
   }
+
+  .active {
+    .letter {
+      transform: translateY(0.7rem);
+    }
+  }
 }
 
 .intro__title {
   margin: 0;
-  max-width: 99rem;
+  max-width: 110rem;
+  word-wrap: break-word;
   text-transform: uppercase;
   font-family: $font-alt;
   font-weight: 400;
