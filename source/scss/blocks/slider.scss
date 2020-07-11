@@ -173,12 +173,26 @@
   }
 }
 
+.active .slider__control {
+  &--prev {
+    animation-name: show-control-left-btn;
+  }
+
+  &--next {
+    animation-name: show-control-right-btn;
+  }
+}
+
 .slider__control {
   @include btn-reset;
   position: relative;
   width: 4rem;
   height: 4rem;
   color: $c-dark;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.67, 1.32);
+  animation-fill-mode: forwards;
+  will-change: transform;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
@@ -188,8 +202,8 @@
   &::before {
     @include center;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     background-color: $c-light;
     border: 2px solid $c-light;
     border-radius: 50%;
@@ -242,6 +256,30 @@
   &.swiper-button-disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+}
+
+@keyframes show-control-left-btn {
+  from {
+    opacity: 0;
+    transform: translateX(-13rem) rotate(-270deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes show-control-right-btn {
+  from {
+    opacity: 0;
+    transform: translateX(13rem) rotate(270deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
   }
 }
 
