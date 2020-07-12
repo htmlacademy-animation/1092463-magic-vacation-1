@@ -1,0 +1,23 @@
+.letter {
+  display: inline-block;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-property: transform;
+  transform: translateY(25rem);
+}
+
+.word {
+  display: inline-flex;
+  padding: 0 0.5rem;
+}
+
+.active {
+  .word {
+    overflow: hidden;
+  }
+
+  .letter {
+    will-change: transform;
+    transform: translateY(18%);
+  }
+}
