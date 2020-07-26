@@ -2085,8 +2085,8 @@ img {
   .prizes__item--journeys .prizes__icon {
     position: relative;
     left: -5.9rem;
-    bottom: -1.4rem;
-    width: 26.8rem; }
+    width: 26.8rem;
+    bottom: 0.2rem; }
     @media (min-width: 2000px) {
       .prizes__item--journeys .prizes__icon {
         left: -59px;
