@@ -10523,6 +10523,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/js/modules/prizes-animation.js":
+/*!***********************************************!*\
+  !*** ./source/js/modules/prizes-animation.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (() => {
+  document.querySelector(`.js-menu-link[href="#prizes"]`)
+    .addEventListener(`click`, () => {
+      document.querySelectorAll(`.prizes__icon img`)
+        .forEach((iconElement) => {
+          iconElement.src = `${iconElement.src}?r=${String(Math.random())}`;
+        });
+    });
+});
+
+
+/***/ }),
+
 /***/ "./source/js/modules/result.js":
 /*!*************************************!*\
   !*** ./source/js/modules/result.js ***!
@@ -10732,9 +10754,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_assign_animation__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/assign-animation */ "./source/js/modules/assign-animation.js");
 /* harmony import */ var _modules_rules_life_cycle_animation_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/rules-life-cycle-animation.js */ "./source/js/modules/rules-life-cycle-animation.js");
 /* harmony import */ var _modules_life_cycle_state__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/life-cycle-state */ "./source/js/modules/life-cycle-state.js");
-/* harmony import */ var _modules_navigation_animation_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/navigation-animation.js */ "./source/js/modules/navigation-animation.js");
-/* harmony import */ var _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/full-page-scroll */ "./source/js/modules/full-page-scroll.js");
+/* harmony import */ var _modules_prizes_animation__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/prizes-animation */ "./source/js/modules/prizes-animation.js");
+/* harmony import */ var _modules_navigation_animation_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/navigation-animation.js */ "./source/js/modules/navigation-animation.js");
+/* harmony import */ var _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/full-page-scroll */ "./source/js/modules/full-page-scroll.js");
 // modules
+
 
 
 
@@ -10755,7 +10779,8 @@ Object(_modules_life_cycle_state__WEBPACK_IMPORTED_MODULE_10__["default"])();
 Object(_modules_assign_animation__WEBPACK_IMPORTED_MODULE_8__["default"])(document.querySelector(`.intro__title`), {delay: 30});
 Object(_modules_assign_animation__WEBPACK_IMPORTED_MODULE_8__["default"])(document.querySelector(`.intro__date`), {delay: 30});
 Object(_modules_mobile_height_adjust_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
-Object(_modules_navigation_animation_js__WEBPACK_IMPORTED_MODULE_11__["default"])();
+Object(_modules_navigation_animation_js__WEBPACK_IMPORTED_MODULE_12__["default"])();
+Object(_modules_prizes_animation__WEBPACK_IMPORTED_MODULE_11__["default"])();
 Object(_modules_slider_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
 Object(_modules_menu_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
 Object(_modules_footer_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
@@ -10764,7 +10789,7 @@ Object(_modules_result_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
 Object(_modules_form_js__WEBPACK_IMPORTED_MODULE_6__["default"])();
 Object(_modules_social_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
 
-const fullPageScroll = new _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_12__["default"]();
+const fullPageScroll = new _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_13__["default"]();
 fullPageScroll.init();
 
 
