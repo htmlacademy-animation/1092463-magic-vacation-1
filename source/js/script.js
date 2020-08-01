@@ -10,6 +10,7 @@ import social from './modules/social.js';
 import assignAnimation from './modules/assign-animation';
 import rulesLifeCycleAnimation from './modules/rules-life-cycle-animation.js';
 import lifeCycleState from './modules/life-cycle-state';
+import prizesAnimation from './modules/prizes-animation';
 import navigationAnimation from './modules/navigation-animation.js';
 import FullPageScroll from './modules/full-page-scroll';
 
@@ -20,6 +21,7 @@ assignAnimation(document.querySelector(`.intro__title`), {delay: 30});
 assignAnimation(document.querySelector(`.intro__date`), {delay: 30});
 mobileHeight();
 navigationAnimation();
+prizesAnimation();
 slider();
 menu();
 footer();
