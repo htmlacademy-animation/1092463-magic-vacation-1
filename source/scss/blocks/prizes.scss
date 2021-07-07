@@ -137,8 +137,8 @@
   &--journeys {
     .prizes__icon {
       position: relative;
-      left: -5.9rem;
-      width: 26.8rem;
+      left: -6.5rem;
+      width: 35rem;
       bottom: 0.2rem;
 
       @media (min-width: $stop-scaling) {
@@ -177,7 +177,10 @@
     }
 
     .prizes__icon {
-      width: 18.8rem;
+      position: relative;
+      width: 35rem;
+      left: -3.8rem;
+      bottom: 0.2rem;
 
       @media (min-width: $stop-scaling) {
         width: 188px;
